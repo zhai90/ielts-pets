@@ -7,18 +7,12 @@ It is a client-side plugin. The host half (`index.js`) does nothing; all study s
 ## Install
 
 ```sh
-dsh plugin --profile web add dsh-ielts-pets
-```
-
-In DSH Desktop, open **Settings → Plugins**, search `dsh-ielts-pets` and install there — the desktop app manages its own profile.
-
-From source:
-
-```sh
 dsh plugin --profile web add github:zhai90/ielts-pets
 ```
 
-Reload the page (or restart `dsh web`) afterwards. There is no build step: `client.js` is already the bundle.
+In DSH Desktop, install the same `github:zhai90/ielts-pets` spec through the app's own plugin manager (its profile is usually called `desktop`).
+
+The package is not published to npm, so this repository is the install source. There is no build step: `client.js` is already the bundle. Reload the page (or restart `dsh web`) afterwards.
 
 ## What you get
 

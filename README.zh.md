@@ -7,18 +7,12 @@
 ## 安装
 
 ```sh
-dsh plugin --profile web add dsh-ielts-pets
-```
-
-桌面端：打开 **设置 → 插件**，搜索 `dsh-ielts-pets` 安装即可——桌面端由应用自己的插件管理器管理 profile。
-
-从源码安装：
-
-```sh
 dsh plugin --profile web add github:zhai90/ielts-pets
 ```
 
-装完刷新页面（或重启 `dsh web`）。没有构建步骤，`client.js` 本身就是产物。
+桌面端用应用自己的插件管理器安装同一个 `github:zhai90/ielts-pets`（profile 通常叫 `desktop`）。
+
+这个包没有发布到 npm，仓库就是安装源；没有构建步骤，`client.js` 本身就是产物。装完刷新页面（或重启 `dsh web`）。
 
 ## 功能
 
