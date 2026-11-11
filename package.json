@@ -1,0 +1,51 @@
+{
+  "name": "dsh-ielts-pets",
+  "version": "1.0.9",
+  "description": "An ambient IELTS vocabulary pet for the DeepSeek Harness web UI: cat, dog and capybara styles, a cursor-tracking head, 120 built-in words, CSV/JSON word import and self-check scheduling.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ielts",
+    "vocabulary",
+    "desk-pet",
+    "spaced-repetition"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhai90/ielts-pets.git"
+  },
+  "homepage": "https://github.com/zhai90/ielts-pets#readme",
+  "bugs": {
+    "url": "https://github.com/zhai90/ielts-pets/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
